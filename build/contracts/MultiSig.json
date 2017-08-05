@@ -1,0 +1,109 @@
+{
+  "contract_name": "MultiSig",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "sign",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "kill",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_releaseAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setRelease",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "releaseFunds",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_trustOne",
+          "type": "address"
+        },
+        {
+          "name": "_trustTwo",
+          "type": "address"
+        }
+      ],
+      "name": "setTrustees",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b5b60008054600160a060020a03191633600160a060020a03161790555b5b5b6103348061003b6000396000f300606060405236156100675763ffffffff60e060020a6000350416632ca15122811461007857806341c0e1b51461008a57806353e96c4e1461009c57806369d89575146100ba57806370f0e3f9146100cc5780638da5cb5b146100f0578063a9059cbb1461011c575b6100765b60018054340190555b565b005b341561008057fe5b61007661013d565b005b341561009257fe5b61007661017f565b005b34156100a457fe5b610076600160a060020a03600435166101ac565b005b34156100c257fe5b6100766101e8565b005b34156100d457fe5b610076600160a060020a036004358116906024351661023e565b005b34156100f857fe5b610100610290565b60408051600160a060020a039092168252519081900360200190f35b341561012457fe5b610076600160a060020a036004351660243561029f565b005b60025433600160a060020a039081169116141561015e576001600455610074565b60035433600160a060020a03908116911614156100745760016005555b5b5b565b60005433600160a060020a0390811691161461019b5760006000fd5b600054600160a060020a0316ff5b5b565b60005433600160a060020a039081169116146101c85760006000fd5b60068054600160a060020a031916600160a060020a0383161790555b5b50565b60045460011480156101fc57506005546001145b15156102085760006000fd5b600654600154604051600160a060020a039092169181156108fc0291906000818181858888f19350505050151561007457fe5b5b565b60005433600160a060020a0390811691161461025a5760006000fd5b60028054600160a060020a03808516600160a060020a03199283161790925560038054928416929091169190911790555b5b5050565b600054600160a060020a031681565b60005433600160a060020a039081169116146102bb5760006000fd5b600154819010156102cc5760006000fd5b600180548290039055604051600160a060020a0383169082156108fc029083906000818181858888f19350505050151561028b57fe5b5b5b50505600a165627a7a72305820eb3d026460f54d67b988a1cc08ac2cae283fd79209c095eacf3b02de03fb6d3b0029",
+  "networks": {
+    "1501965483599": {
+      "events": {},
+      "links": {},
+      "address": "0x5fc4444dbea4615e87bbd0f726636ee2637ca4c9",
+      "updated_at": 1501965491758
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1501965491758
+}
