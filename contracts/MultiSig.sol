@@ -20,23 +20,19 @@ contract mortal is owned {
 }
 
 contract MultiSig is owned, mortal {
-	uint256 funds;
-	address trustOne;
-	address trustTwo;
-	uint256 sigOne;
-	uint256 sigTwo;
-	address releaseAddress;
+	address public trustOne;
+	address public trustTwo;
+	uint256 public sigOne;
+	uint256 public sigTwo;
+	address public releaseAddress;
 
 	function MultiSig() {
 	}
 
 	function () payable {
-		funds += msg.value;
 	}
 
 	function transfer(address _to, uint256 amount) onlyOwner {
-		require(funds >= amount);
-		funds -= amount;
 		_to.transfer(amount);
 	}
 
@@ -59,6 +55,6 @@ contract MultiSig is owned, mortal {
 
 	function releaseFunds() {
 		require((sigOne == 1) && (sigTwo == 1));
-		releaseAddress.transfer(funds);
+		releaseAddress.transfer(this.balance);
 	}
 }
